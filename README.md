@@ -57,7 +57,7 @@ The last `print()` function call doesn’t have a string argument. This tells th
 ## Escape Characters
 Lines 5 to 8 print the question and answer to the next joke:
 
-```
+```python
 print('What do dentists call an astronaut\'s cavity?')
 input()
 print('A black hole!')
