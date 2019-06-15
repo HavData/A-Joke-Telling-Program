@@ -36,12 +36,11 @@ The last `print()` function call doesn’t have a string argument. This tells th
 ### Escape Characters
 Lines 5 to 8 print the question and answer to the next joke:
 
-```python
-print('What do dentists call an astronaut\'s cavity?')
-input()
-print('A black hole!')
-print()
-```
+python:
+1: print('What do dentists call an astronaut\'s cavity?')
+2: input()
+3: print('A black hole!')
+4: print()
 
 On line 5, there’s a backslash right before the single quote: `\'`. (Note that \ is a backslash, and / is a forward slash.) This backslash tells you that the letter right after it is an escape character. An escape character lets you print special characters that are difficult or impossible to enter into the source code, such as the single quote in a string value that begins and ends with single quotes.
 
