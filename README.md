@@ -70,7 +70,7 @@ This way the `\\` is a backslash character, and there is no `\t` to interpret as
 The following table is a list of some escape characters in Python, including `\n`, which is the newline escape character that you have used before.
 
 | Escape Character   | Printed Character |
-| --------- | ---------------- |
+| :---------: | :---------------- |
 | \\        | Backslash (\)    |
 | \'        | Single quote (') |
 | \"        | Double quote (") |
