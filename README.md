@@ -1,7 +1,7 @@
 # A-Joke-Telling-Program
 This is a tutorial that demonstrates some advanced ways to use strings with the print() function in Python 3. This short program tells a few jokes to the user, and shows simple output to the screen. 
 
-##### Topics Covered
+#### Topics Covered
 
 - Escape characters
 - Using single quotes and double quotes for strings
