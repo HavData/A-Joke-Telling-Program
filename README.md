@@ -19,7 +19,7 @@ Interrupting cow wh-MOO!
 
 ## Source Code for Jokes
 
-```
+```python
 print('What do you get when you cross a snowman with a vampire?')
 input()
 print('Frostbite!')
