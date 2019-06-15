@@ -17,7 +17,7 @@ Interrupting cow.
 Interrupting cow wh-MOO!
 ```
 
-### Source Code for Jokes
+## Source Code for Jokes
 
 ```
 print('What do you get when you cross a snowman with a vampire?')
@@ -38,8 +38,7 @@ print('Interrupting cow wh', end='')
 print('-MOO!')
 ```
 
-
-### How the Code Works
+## How the Code Works
 Let's start by looking at the first four lines of code:
 
 ```python
@@ -55,7 +54,7 @@ The user can still type in a string and press ENTER, but this returned string is
 
 The last `print()` function call doesn’t have a string argument. This tells the program to just print a blank line. Blank lines are useful to keep the text from looking crowded.
 
-### Escape Characters
+## Escape Characters
 Lines 5 to 8 print the question and answer to the next joke:
 
 ```
@@ -101,7 +100,7 @@ The following table is a list of some escape characters in Python, including `\n
 
 There are a few more escape characters in Python, but these are the characters you will most likely need for creating games.
 
-### Single and Double Quotes
+## Single and Double Quotes
 
 While we’re still in the interactive shell, let’s take a closer look at quotes. Strings don’t always have to be between single quotes in Python. You can also put them between double quotes. These two lines print the same thing:
 
@@ -141,7 +140,7 @@ The string is surrounded in double quotes, so you need to add backslashes for al
 
 To summarize, in the single-quote strings, you don’t need to escape double quotes but do need to escape single quotes, and in the double-quote strings, you don’t need to escape single quotes but do need to escape double quotes.
 
-### The print() Function’s end Keyword Parameter
+## The print() Function’s end Keyword Parameter
 
 Now let’s go back to jokes.py and take a look at the following lines:
 
@@ -171,7 +170,7 @@ Interrupting cow wh-MOO!
 
 Because we passed a blank string to the `end` parameter, the `print()` function will add a blank string instead of adding a newline. This is why `'-MOO!'` appears next to the previous line, instead of on its own line. There was no newline after the `'Interrupting cow wh'` string was printed.
 
-### Summary
+## Summary
 
 This example explores the different ways you can use the print() function. Escape characters are used for characters that are difficult to type into the code with the keyboard. If you want to use special characters in a string, you must use a backslash escape character, `\`, followed by another letter for the special character. For example, `\n` would be a newline. If your special character is a backslash itself, you use `\\`.
 
