@@ -1,3 +1,1 @@
-```
 This work, "A-Joke-Telling-Program" is a derivative of the source code released in the book INVENT YOUR OWN COMPUTER GAMES WITH PYTHON by Al Sweigart, licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. All changes and additions to this work is licensed under an idential license in 2019 by Mark Havens. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-```
