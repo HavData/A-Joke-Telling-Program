@@ -4,7 +4,7 @@ This program tells a few jokes to the user and demonstrates more advanced ways t
 ## Sample Run of Jokes
 Here's what the user sees when they run the Jokes program:
 
-```python
+```
 What do you get when you cross a snowman with a vampire?
 Frostbite!
 
@@ -21,10 +21,10 @@ Interrupting cow wh-MOO!
 Let's start by looking at the first four lines of code:
 
 ```python
-print('What do you get when you cross a snowman with a vampire?')
-input()
-print('Frostbite!')
-print()
+1. print('What do you get when you cross a snowman with a vampire?')
+2. input()
+3. print('Frostbite!')
+4. print()
 ```
 
 Lines 1 and 3 use the `print()` function call to ask and give the answer to the first joke. You don’t want the user to immediately read the joke’s punchline, so there’s a call to the `input()` function after the first `print()` instance. The user will read the joke, press ENTER, and then read the punchline.
