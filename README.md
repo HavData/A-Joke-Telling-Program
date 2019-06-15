@@ -5,7 +5,7 @@ This is a tutorial that demonstrates some advanced ways to use strings with the 
 
 - Escape characters
 - Using single quotes and double quotes for strings
-- Using print()’s end keyword parameter to skip newlines
+- Using `print()`’s end keyword parameter to skip newlines
 
 ## Sample Run of Jokes
 Here's what the user sees when they run the Jokes program:
