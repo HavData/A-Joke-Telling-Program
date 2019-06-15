@@ -21,10 +21,10 @@ Interrupting cow wh-MOO!
 Let's start by looking at the first four lines of code:
 
 ```python
-1. print('What do you get when you cross a snowman with a vampire?')
-2. input()
-3. print('Frostbite!')
-4. print()
+# print('What do you get when you cross a snowman with a vampire?')
+# input()
+# print('Frostbite!')
+# print()
 ```
 
 Lines 1 and 3 use the `print()` function call to ask and give the answer to the first joke. You don’t want the user to immediately read the joke’s punchline, so there’s a call to the `input()` function after the first `print()` instance. The user will read the joke, press ENTER, and then read the punchline.
