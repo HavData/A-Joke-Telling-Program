@@ -69,9 +69,7 @@ This way the `\\` is a backslash character, and there is no `\t` to interpret as
 
 The following table is a list of some escape characters in Python, including `\n`, which is the newline escape character that you have used before.
 
-| Escape 
-Character   | Printed 
-Character |
+| Escape Character   | Printed Character |
 | :---------: | :---------------- |
 | \\        | Backslash (\)    |
 | \'        | Single quote (') |
@@ -80,3 +78,79 @@ Character |
 | \t        | Tab              |
 
 There are a few more escape characters in Python, but these are the characters you will most likely need for creating games.
+
+### Single and Double Quotes
+
+While we’re still in the interactive shell, let’s take a closer look at quotes. Strings don’t always have to be between single quotes in Python. You can also put them between double quotes. These two lines print the same thing:
+
+```
+>>> print('Hello world')
+Hello world
+>>> print("Hello world")
+Hello world
+```
+
+But you cannot mix quotes. This line will give you an error because it uses both quote types at once:
+
+```
+>>> print('Hello world")
+SyntaxError: EOL while scanning single-quoted string
+```
+
+I like to use single quotes so I don’t have to hold down `SHIFT` to type them. They’re easier to type, and Python doesn’t care either way.
+
+Also, note that just as you need the `\'` to have a single quote in a string surrounded by single quotes, you need the `\"` to have a double quote in a string surrounded by double quotes. Look at this example:
+
+```
+>>> print('I asked to borrow Abe\'s car for a week. He said, "Sure."')
+I asked to borrow Abe's car for a week. He said, "Sure."
+```
+
+You use single quotes to surround the string, so you need to add a backslash before the single quote in `Abe\'s`. But the double quotes in `"Sure."` don’t need backslashes. The Python interpreter is smart enough to know that if a string starts with one type of quote, the other type of quote doesn’t mean the string is ending.
+
+Now check out another example:
+
+```
+>>> print("She said, \"I can't believe you let them borrow your car.\"")
+She said, "I can't believe you let them borrow your car."
+```
+
+The string is surrounded in double quotes, so you need to add backslashes for all of the double quotes within the string. You don’t need to escape the single quote in can't.
+
+To summarize, in the single-quote strings, you don’t need to escape double quotes but do need to escape single quotes, and in the double-quote strings, you don’t need to escape single quotes but do need to escape double quotes.
+
+### The print() Function’s end Keyword Parameter
+
+Now let’s go back to jokes.py and take a look at the following lines:
+
+```python
+print('Knock knock.')
+input()
+print("Who's there?")
+input()
+print('Interrupting cow.')
+input()
+print('Interrupting cow wh', end='')
+print('-MOO!')
+```
+
+Did you notice the second argument in line 15’s `print()` function? Normally, `print()` adds a newline character to the end of the string it prints. This is why a blank `print()` function will just print a newline. But `print()` can optionally have a second parameter: end.
+
+Remember that an argument is the value passed in a function call. The blank string passed to `print()` is called a `keyword argument`. The `end` in `end=''` is called a keyword parameter. To pass a keyword argument to this keyword parameter, you must type `end=` before it.
+
+When we run this section of code, the output is
+
+```
+Knock knock.
+Who's there?
+Interrupting cow.
+Interrupting cow wh-MOO!
+```
+
+Because we passed a blank string to the `end` parameter, the `print()` function will add a blank string instead of adding a newline. This is why `'-MOO!'` appears next to the previous line, instead of on its own line. There was no newline after the `'Interrupting cow wh'` string was printed.
+
+### Summary
+
+This example explores the different ways you can use the print() function. Escape characters are used for characters that are difficult to type into the code with the keyboard. If you want to use special characters in a string, you must use a backslash escape character, `\`, followed by another letter for the special character. For example, `\n` would be a newline. If your special character is a backslash itself, you use `\\`.
+
+The `print()` function automatically appends a newline character to the end of a string. Most of the time, this is a helpful shortcut. But sometimes you don’t want a newline character. To change this, you can pass a blank string as the keyword argument for `print()`’s end keyword parameter. For example, to print spam to the screen without a newline character, you would call `print('spam', end='')`.
