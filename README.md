@@ -1,5 +1,5 @@
 # A-Joke-Telling-Program
-This is a beginner tutorial that demonstrates some advanced ways to use strings with the print() function in Python 3. This short program tells a few jokes to the user, and shows simple output to the screen. 
+This is a beginner tutorial that I use as a lesson in my intro to Programming class. It demonstrates some advanced ways to use strings with the print() function in Python 3. This short program tells a few jokes to the user, and shows simple output to the screen. 
 
 #### Topics Covered
 
